@@ -1,5 +1,5 @@
 import { ModeToggle } from "@/components/theme-toggle";
-import { GithubIcon, TwitterIcon, HexagonIcon } from "lucide-react";
+import Image from "next/image";
 import Link from "next/link";
 import { buttonVariants } from "./ui/button";
 import Search from "./search";
@@ -14,10 +14,6 @@ export const NAVLINKS = [
     href: `/docs/${page_routes[0].href}`,
   },
   {
-    title: "Examples",
-    href: "#",
-  },
-  {
     title: "Guides",
     href: "#",
   },
@@ -27,7 +23,7 @@ export const NAVLINKS = [
   },
   {
     title: "Blog",
-    href: "#",
+    href: "#", // TODO: Route to C5 Website Blog
   },
 ];
 
@@ -55,7 +51,12 @@ export function Navbar() {
                 href="https://github.com/nisabmohd/Docs-Stater-Template"
                 className={buttonVariants({ variant: "ghost", size: "icon" })}
               >
-                <GithubIcon className="h-[1.1rem] w-[1.1rem]" />
+                <Image 
+                  src="/svgs/github.svg"
+                  alt="GitHub Icon"
+                  width={24}
+                  height={24}
+                />
               </Link>
               <Link
                 href="#"
@@ -64,7 +65,26 @@ export function Navbar() {
                   size: "icon",
                 })}
               >
-                <TwitterIcon className="h-[1.1rem] w-[1.1rem]" />
+                <Image 
+                  src="/svgs/twitter-x.svg"
+                  alt="Twitter Icon"
+                  width={19}
+                  height={19}
+                />
+              </Link>
+              <Link
+                href="#"
+                className={buttonVariants({
+                  variant: "ghost",
+                  size: "icon",
+                })}
+              >
+                <Image 
+                  src="/svgs/instagram.svg"
+                  alt="Instagram Icon"
+                  width={23}
+                  height={23}
+                />
               </Link>
               <ModeToggle />
             </div>
@@ -78,8 +98,13 @@ export function Navbar() {
 export function Logo() {
   return (
     <Link href="/" className="flex items-center gap-2.5">
-      <HexagonIcon className="w-7 h-7 text-muted-foreground fill-current" />
-      <h2 className="text-md font-bold">template/docs</h2>
+      <Image 
+        src="/imgs/c5-docs-logo.png"
+        alt="C-5 Docs Logo"
+        width={30}
+        height={30}
+      />
+      <h2 className="text-md font-bold">C5 Docs</h2>
     </Link>
   );
 }

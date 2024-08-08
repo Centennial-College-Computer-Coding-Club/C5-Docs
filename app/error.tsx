@@ -1,7 +1,10 @@
-"use client"; // Error components must be Client Components
+"use client";
 
 import { Button } from "@/components/ui/button";
 import { useEffect } from "react";
+import chalk from "chalk";
+
+const log = console.log;
 
 export default function Error({
   error,
@@ -11,8 +14,8 @@ export default function Error({
   reset: () => void;
 }) {
   useEffect(() => {
-    // Log the error to an error reporting service
-    console.error(error);
+    log(`%c${error.message}`, chalk.red.bold);
+
   }, [error]);
 
   return (
@@ -23,7 +26,7 @@ export default function Error({
       </div>
       <Button
         onClick={
-          // Attempt to recover by trying to re-render the segment
+          // NOTE: Attempt to Recover by Re-Rendering the Component
           () => reset()
         }
       >

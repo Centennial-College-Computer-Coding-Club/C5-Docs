@@ -9,7 +9,7 @@ import rehypeCodeTitles from "rehype-code-titles";
 import { page_routes } from "./routes-config";
 import { visit } from "unist-util-visit";
 
-// custom components imports
+// NOTE: Custom Component Imports
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import Pre from "@/components/pre";
 import Note from "@/components/note";
@@ -19,7 +19,7 @@ type MdxFrontmatter = {
   description: string;
 };
 
-// add custom components
+// NOTE: Add Custom Components Here
 const components = {
   Tabs,
   TabsContent,
@@ -59,7 +59,7 @@ export async function getMarkdownForSlug(slug: string) {
 export async function getTocs(slug: string) {
   const contentPath = getContentPath(slug);
   const rawMdx = await fs.readFile(contentPath, "utf-8");
-  // captures between ## - #### can modify accordingly
+  // NOTE: Capture Group
   const headingsRegex = /^(#{2,4})\s(.+)$/gm;
   let match;
   const extractedHeadings = [];
@@ -93,7 +93,6 @@ function getContentPath(slug: string) {
   return path.join(process.cwd(), "/contents/docs/", `${slug}.mdx`);
 }
 
-// for copying the code
 const preProcess = () => (tree: any) => {
   visit(tree, (node) => {
     if (node?.type === "element" && node?.tagName === "pre") {
@@ -108,7 +107,6 @@ const postProcess = () => (tree: any) => {
   visit(tree, "element", (node) => {
     if (node?.type === "element" && node?.tagName === "pre") {
       node.properties["raw"] = node.raw;
-      // console.log(node);
     }
   });
 };

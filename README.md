@@ -1,75 +1,47 @@
-## Documentation Template
+<br />
+<div align="left">
+  <a href="/url">
+    <img src="./public/imgs/c5-docs-logo.png" alt="C5 Docs Logo" height="150">
+  </a>
 
-This feature-packed documentation template, built with Next.js, offers a sleek and responsive design, perfect for all your project documentation needs.
+<h3 align="left">
+    Official C5 Documentation
+</h3>
+  <p align="center">
+     Documentation site for C5, a community driven club at Centennial College, Toronto. This documentation site serves as a reference for club members, and provides information on code written in the club, overall structure of the organization, and how to contribute to the club (with some guidelines).
+    <br />
+    <div align="center">
+        <a href="/url">Report Bug</a>
+        ✱
+        <a href="/url">Request Feature</a>
+        ✱
+        <a href="/url">Documentation</a>
+    </div>
+  </p>
+</div>
 
-<br/>
+<div align="center">
 
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+</div>
 
-## Getting Started
+> [!WARNING] 
+> This documentation website is still currently under development, and is not yet ready for public use. If there are any issues we have yet to address or
+> any features you would like to see, please let us know by creating an issue in this repository and we will address it as soon as possible.
 
-First, run the development server:
-
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/nisabmohd/Documentation-Template)
-
-Got it! Here's a way to present the features in a more structured and visually appealing way using a table:
-
-
-
+## Table of Contents
 
 ## Features
 
-```plaintext
-Features
-├── MDX supported
-├── Syntax highlighting
-├── Table of contents
-├── Pagination
-├── Search
-├── Code line highlight & code title
-├── Static site generation
-├── Custom components
-├── Light mode & dark mode
-├── Code Switcher
-├── Code copy
-└── Table of content observer highlight
-```
+## Getting Started
 
+### Prerequisites
 
+### Installation
 
-<img src="./public/screely-1719313562121.png" />
-<img src="./public/screely-1719313578041.png" />
-<img src="./public/screely-1719313622174.png" />
-<img src="./public/screely-1719313611520.png" />
-<img src="./public/screely-1719313597608.png" />
+### Usage
+
+# License
+
+This project is licensed under the GNU General Public License v3.0 - see the [LICENSE](LICENSE) file for details.
+
+[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
