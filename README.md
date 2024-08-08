@@ -1,10 +1,10 @@
 <br />
-<div align="left">
+<div align="center">
   <a href="/url">
     <img src="./public/imgs/c5-docs-logo.png" alt="C5 Docs Logo" height="150">
   </a>
 
-<h3 align="left">
+<h3 align="center">
     Official C5 Documentation
 </h3>
   <p align="center">
@@ -21,7 +21,15 @@
 </div>
 
 <div align="center">
-
+    <a href="https://github.com/Centennial-College-Computer-Coding-Club/C5-Docs/issues">
+        <img src="https://img.shields.io/github/issues/Centennial-College-Computer-Coding-Club/C5-Docs" alt="Issues">
+    </a>
+    <a href="https://github.com/Centennial-College-Computer-Coding-Club/C5-Docs">
+        <img src="https://img.shields.io/github/stars/Centennial-College-Computer-Coding-Club/C5-Docs" alt="Stars">
+    </a>
+    <a href="https://github.com/Centennial-College-Computer-Coding-Club/C5-Docs/blob/main/LICENSE">
+        <img src="https://img.shields.io/github/license/Centennial-College-Computer-Coding-Club/C5-Docs" alt="License">
+    </a>
 </div>
 
 > [!WARNING] 
@@ -29,6 +37,14 @@
 > any features you would like to see, please let us know by creating an issue in this repository and we will address it as soon as possible.
 
 ## Table of Contents
+
+- [Table of Contents](#table-of-contents)
+- [Features](#features)
+- [Getting Started](#getting-started)
+  - [Prerequisites](#prerequisites)
+  - [Installation](#installation)
+  - [Usage](#usage)
+- [License](#license)
 
 ## Features
 
@@ -40,7 +56,7 @@
 
 ### Usage
 
-# License
+## License
 
 This project is licensed under the GNU General Public License v3.0 - see the [LICENSE](LICENSE) file for details.
 
