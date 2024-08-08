@@ -48,7 +48,7 @@ export function Navbar() {
             <Search />
             <div className="flex">
               <Link
-                href="https://github.com/nisabmohd/Docs-Stater-Template"
+                href="#"
                 className={buttonVariants({ variant: "ghost", size: "icon" })}
               >
                 <Image 
